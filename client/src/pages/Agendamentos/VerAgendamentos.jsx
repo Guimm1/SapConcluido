@@ -83,12 +83,12 @@ const VerAgendamentos = () => {
 
   return (
     <div className="min-vh-100 d-flex flex-column justify-content-start p-3 ">
-      <h1 className="text-center"> Ver Agendamentos </h1>
+      <h1 className="text-center"> Ver Estoque </h1>
       {/* Filtro de busca */}
       <div className="w-75 mx-auto d-flex justify-content-center gap-2 flex-wrap">
         <InputGroup className="mb-3" style={{ maxWidth: "400px" }}>
           <Form.Control
-            placeholder="Procure um Agendamento"
+            placeholder="Procure um Produto"
             value={buscaNome}
             onChange={(e) => setBuscaNome(e.target.value)}
           />

@@ -10,7 +10,7 @@ const CadastrarAnimal = () => {
   return (
     <div>
       <Container>
-        <h1>Cadastrar Animal</h1>
+        <h1>Cadastar Produto</h1>
         <FormularioAnimal page="cadastro" />
       </Container>
     </div>

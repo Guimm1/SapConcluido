@@ -110,18 +110,18 @@ const FormularioTutor = (props) => {
   return (
     <div className="text-center">
       <Form className="mt-3 w-full" onSubmit={handleSubmit(onSubmit, onError)}>
-        <h5 className=" text-start">Dados pessoais</h5>
+        <h5 className=" text-start">Dados do produto</h5>
         <Row>
           <Col md={12}>
             {/* Caixinha de nome */}
             <FloatingLabel
               controlId="floatingInputNomeCompleto"
-              label="Nome Completo"
+              label="Nome "
               className="mb-5"
             >
               <Form.Control
                 type="text"
-                placeholder="Digite o nome completo do cliente"
+                placeholder="Digite o nome completo do produto"
                 {...register("nome", {
                   required: "O nome é obrigatório",
                   minLength: {
@@ -140,19 +140,19 @@ const FormularioTutor = (props) => {
             {/* Caixinha de email */}
             <FloatingLabel
               controlId="floatingInput"
-              label="Email"
+              label="código(É necessário que o codigo tenha @ e . com (Minhas regras))"
               className="mb-5"
             >
               <Form.Control
                 type="email"
-                placeholder="name@example.com"
+                placeholder="name@example"
                 {...register("email", {
-                  required: "O email é obrigatório",
+                  required: "O código é obrigatório",
                   pattern: {
                     value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
-                    message: "Email inválido",
+                    message: "código inválido",
                   },
-                  validate: (value) => value.includes("@") || "Email inválido",
+                  validate: (value) => value.includes("@") || "código inválido",
                 })}
               />
               {errors.email && <p className="error">{errors.email.message}</p>}
@@ -161,21 +161,21 @@ const FormularioTutor = (props) => {
             {/* Caixinha de cpf */}
             <FloatingLabel
               controlId="floatingInputcpf"
-              label="N° cpf"
+              label="Categoria"
               className="mb-5"
             >
               <Form.Control
                 type="text"
-                placeholder="Digite o número do cpf"
+                placeholder="Digite a categoria"
                 {...register("cpf", {
-                  required: "O número do cpf é obrigatório",
+                  required: "a categoria é obrigatório",
                   minLength: {
                     value: 2,
-                    message: "O número do cpf deve ter pelo menos 2 caracteres",
+                    message: "a categoria deve ter pelo menos 2 caracteres",
                   },
                   maxLength: {
                     value: 100,
-                    message: "O número do cpf deve ter ate 100 caracteres",
+                    message: "a categoria deve ter ate 100 caracteres",
                   },
                 })}
               />
@@ -185,21 +185,21 @@ const FormularioTutor = (props) => {
             {/* Caixinha de telefone */}
             <FloatingLabel
               controlId="floatingInputTelefone"
-              label="Telefone"
+              label="Descrição"
               className="mb-5"
             >
               <Form.Control
                 type="text"
-                placeholder="Digite a telefone do produto"
+                placeholder="Digite a descrição do produto"
                 {...register("telefone", {
-                  required: "O telefone é obrigatório",
+                  required: "a descrição é obrigatória",
                   minLength: {
                     value: 2,
-                    message: "O telefone deve ter pelo menos 2 caracteres",
+                    message: "A descrição deve ter pelo menos 2 caracteres",
                   },
                   maxLength: {
                     value: 180,
-                    message: "O telefone deve ter ate 180 caracteres",
+                    message: "A descrição deve ter ate 180 caracteres",
                   },
                 })}
               />

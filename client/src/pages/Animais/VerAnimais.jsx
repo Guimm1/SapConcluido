@@ -51,12 +51,12 @@ const VerAnimais = () => {
 
   return (
     <div className="min-vh-100 d-flex flex-column justify-content-start p-3 ">
-      <h1 className="text-center"> Ver animais </h1>
+      <h1 className="text-center"> Ver Produtos </h1>
       {/* Filtro de busca */}
       <div className="w-75 mx-auto d-flex justify-content-center gap-2 flex-wrap">
         <InputGroup className="mb-3" style={{ maxWidth: "400px" }}>
           <Form.Control
-            placeholder="Procure um animal"
+            placeholder="Procure um Produto"
             value={buscaNome}
             onChange={(e) => setBuscaNome(e.target.value)}
           />
@@ -70,10 +70,10 @@ const VerAnimais = () => {
           <tr>
             <th>id</th>
             <th>Nome</th>
-            <th>Espécie</th>
-            <th>Raça </th>
-            <th>Sexo</th>
-            <th>Tutor</th>
+            <th>Código</th>
+            <th>Categoria </th>
+            <th>Descrição</th>
+            <th/>
             <th></th>
           </tr>
         </thead>

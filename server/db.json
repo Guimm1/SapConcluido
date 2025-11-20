@@ -2,8 +2,8 @@
   "usuarios": [
     {
       "id": "1",
-      "nome": "Gregory",
-      "email": "gregory@gmail.com",
+      "nome": "Poppy",
+      "email": "gui.mmagri@gmail.com",
       "senha": "5",
       "tipo": "Administrador"
     },
@@ -24,130 +24,21 @@
   ],
   "tutores": [
     {
-      "id": "2ab1",
-      "nome": "Mariana Silva",
-      "cpf": "12345678901",
-      "telefone": "27940011111",
-      "email": "mariana@gmail.com"
-    },
-    {
-      "id": "3bc2",
-      "nome": "Carlos Alberto",
-      "cpf": "98765432100",
-      "telefone": "27940022222",
-      "email": "carlos@gmail.com"
-    },
-    {
-      "id": "4de3",
-      "nome": "Fernanda Torres",
-      "cpf": "55544433322",
-      "telefone": "27940033333",
-      "email": "fernanda@gmail.com"
-    },
-    {
-      "id": "5ef4",
-      "nome": "João Pedro",
-      "cpf": "11122233344",
-      "telefone": "27940044444",
-      "email": "joao@gmail.com"
-    },
-    {
-      "id": "7a35",
-      "nome": "Kelly",
-      "email": "kelly@gmail.com",
-      "cpf": "00000000000",
-      "telefone": "2799999999",
+      "id": "6a45",
+      "nome": "neyma",
+      "email": "ney@01.com",
+      "cpf": "jogado",
+      "telefone": "joga y joga",
       "status": "Ativo"
     }
   ],
   "animais": [
     {
-      "id": "1a01",
-      "nome": "Belinha",
-      "especie": "Cachorro",
-      "raca": "Shitzu",
-      "sexo": "Feminino",
-      "tutor": "Eduardo"
-    },
-    {
-      "id": "1a02",
-      "nome": "Thor",
-      "especie": "Cachorro",
-      "raca": "Labrador",
-      "sexo": "Masculino",
-      "tutor": "Mariana Silva"
-    },
-    {
-      "id": "1a03",
-      "nome": "Luna",
-      "especie": "Gato",
-      "raca": "Siamês",
-      "sexo": "Feminino",
-      "tutor": "Mariana Silva"
-    },
-    {
-      "id": "1a04",
-      "nome": "Rex",
-      "especie": "Cachorro",
-      "raca": "Pastor Alemão",
-      "sexo": "Masculino",
-      "tutor": "Carlos Alberto"
-    },
-    {
-      "id": "1a05",
-      "nome": "Mingau",
-      "especie": "Gato",
-      "raca": "Vira-lata",
-      "sexo": "Masculino",
-      "tutor": "Carlos Alberto"
-    },
-    {
-      "id": "1a06",
-      "nome": "Bento",
-      "especie": "Cachorro",
-      "raca": "Beagle",
-      "sexo": "Masculino",
-      "tutor": "Fernanda Torres"
-    },
-    {
-      "id": "1a07",
-      "nome": "Nina",
-      "especie": "Cachorro",
-      "raca": "Poodle",
-      "sexo": "Feminino",
-      "tutor": "Fernanda Torres"
-    },
-    {
-      "id": "1a08",
-      "nome": "Zeca",
-      "especie": "Gato",
-      "raca": "Persa",
-      "sexo": "Masculino",
-      "tutor": "João Pedro"
-    },
-    {
-      "id": "1a09",
-      "nome": "Mel",
-      "especie": "Cachorro",
-      "raca": "Golden Retriever",
-      "sexo": "Feminino",
-      "tutor": "João Pedro"
-    },
-    {
-      "id": "1a10",
-      "nome": "Dudu",
-      "especie": "Coelho",
-      "raca": "Mini Rex",
-      "sexo": "Masculino",
-      "tutor": "Eduardo"
-    },
-    {
-      "id": "fe85",
-      "nome": "Kiara",
-      "especie": "Cachorro",
-      "raca": "Pitbull",
-      "sexo": "Feminino",
-      "tutor": "Kelly",
+      "id": "dbe1",
+      "nome": "martelo",
+      "especie": "123",
+      "raca": "duro",
+      "sexo": "martelo da poppy",
       "status": "Ativo"
     }
   ],

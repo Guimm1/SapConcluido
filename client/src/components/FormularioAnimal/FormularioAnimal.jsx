@@ -122,7 +122,7 @@ const FormularioAnimal = (props) => {
             {/* Caixinha de nome */}
             <FloatingLabel
               controlId="floatingInputNomeCompleto"
-              label="Nome Completo"
+              label="Nome"
               className="mb-5"
             >
               <Form.Control
@@ -146,7 +146,7 @@ const FormularioAnimal = (props) => {
             {/* Caixinha de Especie */}
             <FloatingLabel
               controlId="floatingInputEspecie"
-              label="Especie"
+              label="código"
               className="mb-5"
             >
               <Form.Control
@@ -172,7 +172,7 @@ const FormularioAnimal = (props) => {
             {/* Caixinha de raca */}
             <FloatingLabel
               controlId="floatingInputRaca"
-              label="Raca"
+              label="Categoria"
               className="mb-5"
             >
               <Form.Control
@@ -196,7 +196,7 @@ const FormularioAnimal = (props) => {
             {/* Caixinha de sexo */}
             <FloatingLabel
               controlId="floatingInputSexo"
-              label="Sexo"
+              label="Descrição"
               className="mb-5"
             >
               <Form.Control
@@ -217,33 +217,7 @@ const FormularioAnimal = (props) => {
               {errors.sexo && <p className="error">{errors.sexo.message}</p>}
             </FloatingLabel>
             
-            {/* Select de tutor */}
-            <FloatingLabel
-              controlId="floatingSelectTutor"
-              label="Tutor"
-              className="mb-5"
-            >
-              <Form.Select
-                {...register("tutor", {
-                  validate: (value) => value !== "0" || "Escolha um tutor",
-                })}
-              >
-                <option value="0"> Escolha um tutor </option>
-                {tutores.map((tut) => (
-                  <option
-                    key={tut.id}
-                    value={tut.nome}
-                    // é pra ser selected, mas tá reclamando
-                    defaultValue={
-                      props.page === "editar" && watch("categoria") === tut.nome
-                    }
-                  >
-                    {tut.nome}
-                  </option>
-                ))}
-              </Form.Select>
-              {errors.tutor && <p className="error">{errors.tutor.message}</p>}
-            </FloatingLabel>
+           
           </Col>
         </Row>
         {/* Botão para enviar o formulário de cadastro de produto */}

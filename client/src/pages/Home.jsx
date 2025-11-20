@@ -6,42 +6,30 @@ import Row from "react-bootstrap/Row";
 const Home = () => {
   return (
     <div>
-      <h1>Bem vindo ao Agenda Pet</h1>
+      <h1>Bem vindo ao BrasilFix</h1>
       <Row className="g-4 d-flex flex-wrap flex-row">
         <Col xs={12} md={3}>
           <Card>
             <Card.Img
               variant="top"
               height="300px"
-              src="https://vetery.com.br/wp-content/uploads/2023/08/5-dicas-para-evitar-o-estresse-durante-a-visita-ao-veterinario.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dcVtsFAjEB33Omu_c8M2YG3e8zvfnldlCA&s"
             />
             <Card.Body>
-              <Card.Title>Cadastrar Pet </Card.Title>
-              <Card.Text>Cadastre seu pet</Card.Text>
+              <Card.Title>Cadastrar Produto </Card.Title>
+              <Card.Text>Cadastre seu produto</Card.Text>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="https://wellvet.vet.br/wp-content/uploads/veterinario-a-domicilio-img.jpg" />
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavDrZupnWcuhBNJZVqywj_8HsaTJFLd7VZw&s" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Verifique seu estoque</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Por onde andam seus produtos,e do que precisa
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img
-              variant="top"
-              height="300px"
-              src="https://sindan.org.br/wp-content/uploads/2022/06/50d5403d-91ca-4679-ae62-0f208f14be57-1024x675.jpg"
-            />
-            <Card.Body>
-              <Card.Title>Cadastre um tutor</Card.Title>
-              <Card.Text>Cadastre um tutor</Card.Text>
-            </Card.Body>
-          </Card>
+         
         </Col>
       </Row>
     </div>

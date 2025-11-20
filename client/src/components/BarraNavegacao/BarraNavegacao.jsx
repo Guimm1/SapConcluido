@@ -11,6 +11,8 @@ import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../contexts/UserContext.jsx";
 import { useContext } from "react";
 
+import { IoIosHammer } from "react-icons/io";
+
 // Importanto os icones
 import {
   BsBoxes,
@@ -26,6 +28,7 @@ import {
   BsSpeedometer,
   BsTable,
   BsViewStacked,
+  
 } from "react-icons/bs";
 
 import { MdPets } from "react-icons/md";
@@ -46,7 +49,7 @@ const BarraNavegacao = () => {
       {/* Logo da empresa */}
       <Navbar.Brand as={NavLink} to="/home" className="text-white mb-3 d-flex justify-content-center align-items-center">
         <BsShop className="fs-1" />
-        <span className="fs-2 ms-2" >Pet</span>
+        <span className="fs-2 ms-2" >BrasilFix</span>
       </Navbar.Brand>
 
       {/* Opções de menu */}
@@ -62,8 +65,8 @@ const BarraNavegacao = () => {
           {/* Páginas produtos */}
           <Accordion.Item eventKey="0" className="bg-dark text-white">
             <Accordion.Header className={styles.accordionHeader}>
-              <MdPets className="fs-2" />
-              <span className="ms-2 fs-5 fs-5"> Animais </span>
+              <IoIosHammer className="fs-2" />
+              <span className="ms-2 fs-5 fs-5"> Produtos </span>
             </Accordion.Header>
             <Accordion.Body className={`p-0 bg-dark ${styles.accordionBody}`}>
               <Nav className="flex-column">
@@ -94,7 +97,7 @@ const BarraNavegacao = () => {
           <Accordion.Item eventKey="1" className="bg-dark text-white" >
             <Accordion.Header className={styles.accordionHeader}>
               <BsPeople className="fs-2" />
-              <span className="ms-2 fs-5 fs-5"> Tutores </span>
+              <span className="ms-2 fs-5 fs-5">Estoque</span>
             </Accordion.Header>
             <Accordion.Body className={`p-0 bg-dark ${styles.accordionBody}`}>
               <Nav className="flex-column">
@@ -123,34 +126,7 @@ const BarraNavegacao = () => {
 
          
           {/* Páginas Agendamentos */}
-          <Accordion.Item eventKey="3" className="bg-dark text-white">
-            <Accordion.Header className={styles.accordionHeader}>
-              <BsTable className="fs-2" />
-              <span className="ms-2 fs-5"> Agendamentos </span>
-            </Accordion.Header>
-            <Accordion.Body className={`p-0 bg-dark ${styles.accordionBody}`}>
-              <Nav className="flex-column">
-                {/* Opção 1 */}
-                <Nav.Link
-                  as={NavLink}
-                  to="/agendamentos"
-                  className="text-white ps-4"
-                >
-                  <BsTable className="fs-5" />
-                  <span className="ms-2 fs-5"> Listar </span>
-                </Nav.Link>
-                {/* Opção 2 */}
-                <Nav.Link
-                  as={NavLink}
-                  to="/agendamentos/cadastrar"
-                  className="text-white ps-4"
-                >
-                  <BsTable className="fs-5" />
-                  <span className="ms-2 fs-5"> Adicionar </span>
-                </Nav.Link>
-              </Nav>
-            </Accordion.Body>
-          </Accordion.Item>
+          
           {/* fim funcionarios */}
         </Accordion>
       </Nav>

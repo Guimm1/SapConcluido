@@ -51,12 +51,12 @@ const VerTutores = () => {
 
   return (
     <div className="min-vh-100 d-flex flex-column justify-content-start p-3 ">
-      <h1 className="text-center"> Ver tutores </h1>
+      <h1 className="text-center"> Ver Produtos em estoque </h1>
       {/* Filtro de busca */}
       <div className="w-75 mx-auto d-flex justify-content-center gap-2 flex-wrap">
         <InputGroup className="mb-3" style={{ maxWidth: "400px" }}>
           <Form.Control
-            placeholder="Procure um tutor"
+            placeholder="Procure um produto no estoque"
             value={buscaNome}
             onChange={(e) => setBuscaNome(e.target.value)}
           />
@@ -68,11 +68,11 @@ const VerTutores = () => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>id</th>
-            <th>Nome Completo</th>
-            <th>Email</th>
-            <th>cpf </th>
-            <th>Telefone</th>
+            
+            <th>Nome </th>
+            <th>código</th>
+            <th>categoria </th>
+            <th>descrição</th>
             <th></th>
           </tr>
         </thead>
