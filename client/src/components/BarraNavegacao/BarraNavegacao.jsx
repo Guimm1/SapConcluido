@@ -13,6 +13,8 @@ import { useContext } from "react";
 
 import { IoIosHammer } from "react-icons/io";
 
+import { RiStockLine } from "react-icons/ri";
+
 // Importanto os icones
 import {
   BsBoxes,
@@ -96,7 +98,7 @@ const BarraNavegacao = () => {
           {/* Páginas cliente */}
           <Accordion.Item eventKey="1" className="bg-dark text-white" >
             <Accordion.Header className={styles.accordionHeader}>
-              <BsPeople className="fs-2" />
+              <RiStockLine  className="fs-2" />
               <span className="ms-2 fs-5 fs-5">Estoque</span>
             </Accordion.Header>
             <Accordion.Body className={`p-0 bg-dark ${styles.accordionBody}`}>
@@ -107,7 +109,7 @@ const BarraNavegacao = () => {
                   to="/tutores"
                   className="text-white ps-4"
                 >
-                  <BsPersonGear className="fs-5" />
+                  <BsViewStacked  className="fs-5" />
                   <span className="ms-2 fs-5"> Listar </span>
                 </Nav.Link>
                 {/* Opção 2 */}
@@ -116,7 +118,7 @@ const BarraNavegacao = () => {
                   to="/tutores/cadastrar"
                   className="text-white ps-4"
                 >
-                  <BsPersonAdd className="fs-5" />
+                  <BsPlusCircle className="fs-5" />
                   <span className="ms-2 fs-5"> Adicionar </span>
                 </Nav.Link>
               </Nav>
